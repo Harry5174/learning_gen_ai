@@ -1,0 +1,9 @@
+openai
+requests
+pydantic
+Python 3.8+
+FastAPI
+SQLModel
+OpenAI
+Streamlit
+HTTPX

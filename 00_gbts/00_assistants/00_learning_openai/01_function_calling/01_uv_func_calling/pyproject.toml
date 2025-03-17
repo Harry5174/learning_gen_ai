@@ -1,0 +1,21 @@
+[project]
+name = "uv-func-calling"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Harry5174", email = "harisjaved010@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.115.11",
+    "requests>=2.32.3",
+    "uvicorn[standard]>=0.34.0",
+]
+
+[project.scripts]
+uv-func-calling = "uv_func_calling:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
