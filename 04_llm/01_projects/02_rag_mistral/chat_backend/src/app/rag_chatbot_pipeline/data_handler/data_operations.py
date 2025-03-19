@@ -5,28 +5,7 @@ from langchain_community.vectorstores import Chroma
 from app.llm.openai_connectivity import OPENAI_API_KEY
 from app.rag_chatbot_pipeline.data_handler.raw_pdfs import RawPDFProcessor
 from langchain.schema import Document
-from langchain.embeddings import HuggingFaceEmbeddings
 import os
-
-
-# from langchain_community.llms import Ollama
-# from langchain.chat_models import ChatOpenAI
-# from langchain.document_loaders import PyPDFLoader
-# from langchain.document_loaders import DirectoryLoader
-# from langchain.document_loaders.recursive_url_loader import RecursiveUrlLoader
-# from langchain.embeddings import OpenAIEmbeddings
-# from langchain.text_splitter import CharacterTextSplitter
-# from langchain.text_splitter import RecursiveCharacterTextSplitter
-# from langchain.vectorstores import Chroma
-
-# from langchain.chains import ConversationalRetrievalChain
-# from langchain.memory import ConversationBufferMemory
-
-from langchain.embeddings import HuggingFaceEmbeddings
-# from bs4 import BeautifulSoup as Soup
-# from langchain.utils.html import (PREFIXES_TO_IGNORE_REGEX,
-#                                   SUFFIXES_TO_IGNORE_REGEX)
-
 
 def prepare_pdf_data():
     processor = RawPDFProcessor()
