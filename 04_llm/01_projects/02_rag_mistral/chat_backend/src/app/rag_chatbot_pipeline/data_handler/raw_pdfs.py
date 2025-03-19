@@ -1,8 +1,5 @@
 import os
 import PyPDF2
-# from pdf2image import convert_from_path
-# from PIL import Image
-# import pytesseract
 from typing import List, Dict
 
 
@@ -56,39 +53,6 @@ class RawPDFProcessor:
                 if page_text:
                     text += page_text
         return text
-
-    # def extract_images_from_pdf(self, pdf_path: str, output_dir: str) -> List[str]:
-    #     """
-    #     Extracts images from the PDF using pdf2image and saves them in the output directory.
-    #     """
-    #     os.makedirs(output_dir, exist_ok=True)  # Ensure the output directory exists
-    #     images = convert_from_path(pdf_path)
-    #     image_paths = []
-
-        # Loop through images and save them
-        # for i, image in enumerate(images):
-        #     image_path = os.path.join(output_dir, f"page_{i + 1}.png")
-        #     image.save(image_path, 'PNG')
-        #     image_paths.append(image_path)
-
-        #     # Optional: Use OCR to extract text from labeled images
-        #     ocr_text = self.extract_text_from_image(image)
-        #     ocr_text_path = os.path.join(output_dir, f"page_{i + 1}_ocr.txt")
-        #     with open(ocr_text_path, 'w') as ocr_file:
-        #         ocr_file.write(ocr_text)
-
-        # return image_paths
-
-    # def extract_text_from_image(self, image: Image) -> str:
-    #     """
-    #     Uses pytesseract to extract text from an image (optional, for labeled images or unstructured data).
-    #     """
-    #     try:
-    #         ocr_text = pytesseract.image_to_string(image)
-    #         return ocr_text
-    #     except Exception as e:
-    #         print(f"Error performing OCR: {str(e)}")
-    #         return ""
 
     def process_all_pdfs(self) -> Dict[str, str]:
         """
