@@ -1,0 +1,21 @@
+[project]
+name = "app"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Harry5174", email = "harisjaved010@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "python-dotenv>=1.1.1",
+    "uvicorn>=0.35.0",
+    "websockets>=15.0.1",
+]
+
+[project.scripts]
+app = "app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

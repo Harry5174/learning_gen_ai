@@ -1,0 +1,6 @@
+{
+  // point VS Code to your venv parent folder
+  "python.venvPath": "/home/harry/Desktop/relations/qasim_nawaz/call_centre_project/call_agent",
+  // (optional) force using that specific interpreter
+  "python.defaultInterpreterPath": "/home/harry/Desktop/relations/qasim_nawaz/call_centre_project/call_agent/.venv/bin/python"
+}
